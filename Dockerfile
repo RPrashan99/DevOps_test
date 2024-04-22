@@ -1,6 +1,6 @@
 FROM node:latest
 
-WORKDIR /APP
+WORKDIR /home/eg4118/Documents/app
 
 COPY APP/* /
 

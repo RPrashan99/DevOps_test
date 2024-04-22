@@ -1,0 +1,12 @@
+FROM node:latest
+
+WORKDIR /Node_Project1
+
+COPY Node_Project1/* /
+
+RUN npm install
+
+EXPOSE 3000
+
+CMD [ "npm", "start" ]
+

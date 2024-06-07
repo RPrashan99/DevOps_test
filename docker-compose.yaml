@@ -1,9 +1,14 @@
+version: 'v01'
+
 services:
   backend:
-    build: APP/.
+    build: ./APP
+    container_name: node_project
     ports:
       - "5000:5000"
+
   frontend:
-    build: front/.
+    build: ./front
+    container_name: react_front
     ports:
-      -"3000:3000"
+      - "3000:3000"

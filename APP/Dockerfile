@@ -1,12 +1,12 @@
 FROM node:latest
 
-WORKDIR /home/eg4118/Documents/app
+WORKDIR /app
 
-COPY APP/* /
+COPY . .
 
 RUN npm install
 
-EXPOSE 3000
+EXPOSE 5000
 
 CMD [ "npm", "start" ]
 

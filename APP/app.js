@@ -9,7 +9,7 @@ app.use(cors({
   origin: ['http://localhost:3000'],
 }));
 
-app.get('/', (req, res) => {
+app.post('/getData', (req, res) => {
   res.send('Node Project Initilize!');
 });
 
